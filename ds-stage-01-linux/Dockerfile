@@ -1,4 +1,4 @@
-# Data Science R Container Stage 1: Linux dependencies
+# Data Science Linux Container Stage 1: Linux dependencies
 # Set up a CentOS linux container with required dependencies
 
 # use make for typical use : make help for options
