@@ -1,4 +1,4 @@
-id=ds-stage-11-proj
+id=ds-stage-11-project
 base_image=ds-stage-03-rstudio:latest
 container_name=ds_rstudio_proj
 
