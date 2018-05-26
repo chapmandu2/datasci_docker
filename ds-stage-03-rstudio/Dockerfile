@@ -24,6 +24,7 @@ FROM ${BASE_IMAGE}
 #install and configure RStudio Server
 #####################
 
+#install linux components required for RStudio Server
 RUN yum -y install \
 	sudo \
 	supervisor
