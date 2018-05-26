@@ -1,6 +1,6 @@
 # Introduction
 
-
+This is an example repository for building reproducible data science environments with Docker.  You can read more about this in blog posts at https://dwpdigital.blog.gov.uk/2018/05/18/using-containers-to-deliver-our-data-projects/ and https://chapmandu2.github.io/post/2018/05/26/reproducible-data-science-environments-with-docker/.
 
 # Instructions
 
@@ -10,13 +10,13 @@ Building these docker images from scratch requires time to both download package
 
 ## Quick start
 
-Build the minimal_centos7 docker image:
+Pull a minimal centos7 docker image to your local machine:
 
-`docker build /path/to/minimal_centos7 --tag='minimal_centos7'`
+`docker pull centos:latest`
 
-Then run a container based on the image as follows:
+Run a minimal centos7 docker container:
 
-`docker run -it minimal_centos7`
+`docker run -it centos`
 
 This drops you into a bash prompt within the docker container.  How you interact with the docker container depends on how it is configured so look at the Dockerfile for further instructions!
 
@@ -27,6 +27,10 @@ If you exit you can see available docker containers with:
 Get back into an existing container with:
 
 `docker start -i <name_of_container>`
+
+Remove unwanted containers with:
+
+`docker rm <name_of_container>`
 
 For more information see the [Docker documentation](https://docs.docker.com)
 
